@@ -145,7 +145,7 @@ class RagSummarizeService(object):
 
         # 步骤 3: 调用链 (Chain)
         # 传入一个字典，key 必须与 prompt_template 中的占位符一致
-        # 通常是 "input" (用户问题) 和 "context" (组装好的参考资料)
+        # rag_summarize.txt中的模板包括 "input" (用户问题) 和 "context" (组装好的参考资料)
         res = self.chain.invoke(
             {
                 "input": query,
