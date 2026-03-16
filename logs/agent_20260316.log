@@ -1,0 +1,121 @@
+2026-03-16 10:30:14,394 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 10:30:14,395 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我的机器人坏了
+2026-03-16 10:30:49,370 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-16 10:30:49,370 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 现在机器人无法充电
+2026-03-16 10:30:51,868 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-16 10:30:51,868 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人无法充电故障排查'}
+2026-03-16 10:30:57,255 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-16 10:30:58,898 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-16 10:30:58,899 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 扫地机器人无法充电的故障排查步骤包括：检查电源适配器是否插紧、电源线是否破损；确认充电座是否通电、指示灯是否亮起，若不亮需检查插座和电源线，必要时更换充电座；确保电池安装到位，若电池鼓包应立即更换原装电池；清理充电座周围3米内障碍物及回充传感器灰尘，确保红外信号正常。若以上操作无效，建议联系售后检测主板。
+2026-03-16 10:31:44,288 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-16 10:31:44,289 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我发现电池变形了，怎么办
+2026-03-16 10:31:46,540 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-16 10:31:46,541 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人电池鼓包变形处理方法'}
+2026-03-16 10:31:48,781 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-16 10:31:49,300 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有9条消息。
+2026-03-16 10:31:49,300 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 电池鼓包变形时，应立即停止充电，检测是否过充、电池老化或充电适配器故障，并更换原装电池和适配器。
+2026-03-16 10:34:56,148 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有11条消息。
+2026-03-16 10:34:56,149 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你还记得我的是谁吗
+2026-03-16 10:34:58,457 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_user_id
+2026-03-16 10:34:58,457 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{}
+2026-03-16 10:34:58,458 - agent - INFO - middleware.py:67 - [tool monitor]工具get_user_id调用成功
+2026-03-16 10:34:58,513 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有13条消息。
+2026-03-16 10:34:58,514 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 1021
+2026-03-16 10:35:29,377 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有15条消息。
+2026-03-16 10:35:29,377 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 结合今天的天气，简单分析电池鼓包的原因
+2026-03-16 10:35:30,957 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_user_location
+2026-03-16 10:35:30,958 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{}
+2026-03-16 10:35:30,959 - agent - INFO - middleware.py:67 - [tool monitor]工具get_user_location调用成功
+2026-03-16 10:35:31,066 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有17条消息。
+2026-03-16 10:35:31,067 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 安徽-合肥-包河区
+2026-03-16 10:35:32,675 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_weather
+2026-03-16 10:35:32,675 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'city': '安徽-合肥-包河区'}
+2026-03-16 10:35:32,683 - agent - ERROR - weather_service.py:61 - 获取天气失败: 'ascii' codec can't encode characters in position 33-34: ordinal not in range(128)
+2026-03-16 10:35:32,684 - agent - INFO - middleware.py:67 - [tool monitor]工具get_weather调用成功
+2026-03-16 10:35:33,723 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有19条消息。
+2026-03-16 10:35:33,723 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 📍 城市：安徽-合肥-包河区
+🌤️ 天气：晴
+🌡️ 温度：25°C
+💧 湿度：50%
+🌬️ 风向：南风 ≤3级
+
+🤖 扫地机器人使用建议：
+  ✅ 天气良好，适合使用扫地机器人
+  ✅ 温度适宜
+2026-03-16 10:35:39,954 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-16 10:35:39,955 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '高温高湿环境对扫地机器人电池影响'}
+2026-03-16 10:35:41,890 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-16 10:35:42,448 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有21条消息。
+2026-03-16 10:35:42,449 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 高温高湿环境下，应避免扫地机器人在阳光直射处工作，确保充电环境通风良好，并每周检查电池温度，防止过热。
+2026-03-16 11:05:23,325 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 11:05:23,326 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 输出我的id，读取文件并输出我在2月的使用记录
+2026-03-16 11:05:30,387 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_user_id
+2026-03-16 11:05:30,387 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{}
+2026-03-16 11:05:30,388 - agent - INFO - middleware.py:67 - [tool monitor]工具get_user_id调用成功
+2026-03-16 11:05:30,389 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-16 11:05:30,389 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 1007
+2026-03-16 11:05:32,478 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_current_month
+2026-03-16 11:05:32,478 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{}
+2026-03-16 11:05:32,479 - agent - INFO - middleware.py:67 - [tool monitor]工具get_current_month调用成功
+2026-03-16 11:05:32,480 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-16 11:05:32,480 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 2026-03
+2026-03-16 11:05:36,301 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：fetch_external_data
+2026-03-16 11:05:36,301 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'user_id': '1007', 'month': '2026-02'}
+2026-03-16 11:05:36,302 - agent - WARNING - agent_tools.py:211 - [fetch_external_data]未能检索到用户：1007在2026-02的使用记录数据
+2026-03-16 11:05:36,302 - agent - INFO - middleware.py:67 - [tool monitor]工具fetch_external_data调用成功
+2026-03-16 11:05:36,303 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-16 11:05:36,304 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 
+2026-03-16 11:05:44,598 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：fetch_external_data
+2026-03-16 11:05:44,598 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'user_id': '1007', 'month': '2025-02'}
+2026-03-16 11:05:44,599 - agent - INFO - middleware.py:67 - [tool monitor]工具fetch_external_data调用成功
+2026-03-16 11:05:44,600 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有9条消息。
+2026-03-16 11:05:44,600 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | {"特征": "55㎡一居 | 独居 | 复合地板", "效率": "覆盖率:91%\\n日均清扫:36㎡\\n沿边清扫无死角", "耗材": "滤网寿命:剩余75天\\n尘盒清理:每4天", "对比": "清洁效率优于72%小户型用户"}
+2026-03-16 11:08:11,500 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 11:08:11,501 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 输出我的id
+2026-03-16 11:08:13,329 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_user_id
+2026-03-16 11:08:13,330 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{}
+2026-03-16 11:08:13,330 - agent - INFO - middleware.py:67 - [tool monitor]工具get_user_id调用成功
+2026-03-16 11:08:13,331 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-16 11:08:13,331 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 1004
+2026-03-16 11:09:56,875 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 11:09:56,875 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你知不知道我是谁
+2026-03-16 11:09:59,366 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_user_id
+2026-03-16 11:09:59,367 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{}
+2026-03-16 11:09:59,368 - agent - INFO - middleware.py:67 - [tool monitor]工具get_user_id调用成功
+2026-03-16 11:09:59,422 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-16 11:09:59,423 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 1014
+2026-03-16 11:10:58,738 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-16 11:10:58,738 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我想买一个新的扫地机器人，你有什么推荐
+2026-03-16 11:11:01,217 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-16 11:11:01,217 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人选购指南'}
+2026-03-16 11:11:09,288 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-16 11:11:11,698 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-16 11:11:11,699 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 选购扫地机器人应根据使用场景明确需求：独居小户型可选轻便灵活的基础激光导航机型（如米家1C、石头T4）；多口之家或有宠物家庭需大吸力（≥2500Pa，建议≥3000Pa）、胶刷设计、大尘盒及防缠绕功能；地毯多的家庭需具备地毯识别、自动增压功能，吸力建议≥2500Pa，复杂户型推荐激光导航以提升定位精度。核心参数包括导航类型、吸力大小、电池容量（大户型建议>5200mAh）及尘盒/水箱容量。国产机型功能丰富、性价比高，iRobot算法成熟但功能较单一。
+2026-03-16 14:03:52,715 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md
+2026-03-16 14:03:52,716 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md
+2026-03-16 14:06:52,806 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_527c8ae7.md
+2026-03-16 14:07:32,096 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md
+2026-03-16 14:07:32,125 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 14:07:32,126 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我想再买一个扫地机器人
+2026-03-16 14:07:37,101 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-16 14:07:37,102 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人选购指南和推荐型号'}
+2026-03-16 14:07:46,080 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-16 14:07:48,838 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-16 14:07:48,839 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 选购扫地机器人应根据使用场景选择：小户型适合基础激光导航机型（如米家1C、石头T4），大户型需大电池（>5200mAh）及自动集尘或自动洗拖布功能；有宠物家庭应选吸力≥2500Pa、胶刷设计、大尘盒容量机型；地毯多的家庭需具备地毯识别、自动增压功能，吸力≥2500Pa。核心参数包括导航类型、吸力（家用建议≥3000Pa，地毯场景≥4000Pa）、电池容量、尘盒/水箱容量。导航方面，激光导航精准抗干扰，适合复杂户型；视觉导航性价比高，但避免强光环境使用。国产机型功能丰富、性价比高，iRobot算法成熟但功能较单一。
+2026-03-16 14:08:07,342 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md
+2026-03-16 14:08:18,896 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 14:08:18,896 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你好，你是谁
+2026-03-16 14:08:23,725 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_527c8ae7.md
+2026-03-16 14:26:44,641 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md
+2026-03-16 14:26:44,659 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 14:26:44,660 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我感觉有点不好用
+2026-03-16 14:26:55,916 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md
+2026-03-16 14:30:05,776 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md
+2026-03-16 14:30:05,790 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-16 14:30:05,790 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我感觉速度有点慢
+2026-03-16 14:30:09,923 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-16 14:30:09,924 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人运行速度慢的原因和解决方法'}
+2026-03-16 14:30:13,225 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-16 14:30:14,096 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-16 14:30:14,097 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 扫地机器人运行速度慢的原因可能包括：驱动轮或万向轮缠绕毛发、杂物导致轮组卡顿，地面过滑影响移动。解决方法为清理轮组缠绕物，滴少量专用润滑油，并在干燥地面测试运行。
+2026-03-16 14:30:28,666 - agent - INFO - memory_manager.py:142 - 会话已保存: memory/sessions/1010_6fb040a9.md

@@ -1,0 +1,60 @@
+2026-03-14 18:41:49,149 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 18:41:49,150 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你好
+2026-03-14 18:42:10,136 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-14 18:42:10,136 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我想买个扫地机器人
+2026-03-14 18:42:11,636 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-14 18:42:11,637 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人选购指南'}
+2026-03-14 18:42:19,275 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-14 18:42:21,600 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-14 18:42:21,600 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 选购扫地机器人应优先明确使用场景：独居小户型适合基础激光导航机型（如米家1C、石头T4），多口之家或有宠物家庭需选择吸力≥2500Pa（家用建议≥3000Pa，地毯场景≥4000Pa）、胶刷设计、大尘盒容量及防缠绕功能的机型；大户型应关注电池容量（>5200mAh）及自动集尘或自动洗拖布功能。导航方面，激光导航定位精准、抗干扰强，适合复杂户型；视觉导航性价比高但应避免强光环境使用。主要参数包括导航类型、吸力大小、电池容量、尘盒/水箱容量。
+2026-03-14 18:56:35,222 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有13条消息。
+2026-03-14 18:56:35,223 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你知道我是谁吗
+2026-03-14 18:56:37,854 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：get_user_id
+2026-03-14 18:56:37,855 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{}
+2026-03-14 18:56:37,855 - agent - INFO - middleware.py:67 - [tool monitor]工具get_user_id调用成功
+2026-03-14 18:56:37,910 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有15条消息。
+2026-03-14 18:56:37,911 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 1007
+2026-03-14 18:57:10,343 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有23条消息。
+2026-03-14 18:57:10,344 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 根据历史回答，你还知道我是谁啊吗
+2026-03-14 22:32:59,439 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 22:32:59,440 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你现在改名叫扫地僧
+2026-03-14 22:33:33,247 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-14 22:33:33,247 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我想把扫地机器人拆开清理，应该怎么做
+2026-03-14 22:33:38,220 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-14 22:33:38,221 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人拆机清理步骤 安全注意事项'}
+2026-03-14 22:33:43,528 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-14 22:33:44,276 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有5条消息。
+2026-03-14 22:33:44,276 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 拆机清理步骤：每周拆卸主刷滚刷清洗（非防水款用干布擦拭），晾干后安装；每月拆解吸口组件清理内部细小杂物；清扫大颗粒垃圾或宠物毛发后立即检查并清理吸口、滚刷仓及尘盒，防止结块或卡机。  
+安全注意事项：更换集尘袋前先关闭电源，避免漏灰；清理时确保机器人断电；使用干软布擦拭机身和传感器，避免水渍残留。
+2026-03-14 22:34:45,059 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有7条消息。
+2026-03-14 22:34:45,060 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你还记得你叫什么吗
+2026-03-14 22:51:25,956 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 22:51:25,957 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你现在是扫地僧
+2026-03-14 22:51:47,932 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-14 22:51:47,933 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你现在改名叫作扫地僧
+2026-03-14 22:57:19,165 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 22:57:19,166 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你现在改名叫作扫地僧
+2026-03-14 23:18:52,230 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 23:18:52,232 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你是谁
+2026-03-14 23:19:17,845 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 23:19:17,846 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你是谁
+2026-03-14 23:20:50,179 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 23:20:50,180 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你是谁
+2026-03-14 23:21:19,175 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 23:21:19,176 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你是谁
+2026-03-14 23:23:09,993 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 23:23:09,993 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 你是谁
+2026-03-14 23:23:43,826 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 23:23:43,826 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我的机器人清理不干净地面，怎么解决
+2026-03-14 23:23:47,894 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-14 23:23:47,899 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人清理不干净地面 故障排查'}
+2026-03-14 23:23:52,096 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-14 23:23:52,098 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-14 23:23:52,099 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 若扫地机器人清理不干净地面，可按以下步骤排查：检查主刷、边刷是否磨损或缠绕毛发；清理尘盒和滤网；将吸力调至最高档并增加清扫频次；对床底、沙发底等区域在APP中设置“深度拖扫”；检查边角位置是否因边刷异常导致清扫不净，可启用“沿边清扫”模式；确认是否设置了禁区造成漏扫，必要时重新建图或手动补扫。
+2026-03-14 23:26:09,524 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-14 23:26:09,524 - agent - DEBUG - middleware.py:117 - [log_before_model]HumanMessage | 我的机器人清理不干净地面，怎么解决
+2026-03-14 23:26:15,288 - agent - INFO - middleware.py:59 - [tool monitor]执行工具：rag_summarize
+2026-03-14 23:26:15,288 - agent - INFO - middleware.py:61 - [tool monitor]传入参数：{'query': '扫地机器人清理不干净地面的原因和解决方法'}
+2026-03-14 23:26:19,534 - agent - INFO - middleware.py:67 - [tool monitor]工具rag_summarize调用成功
+2026-03-14 23:26:19,536 - agent - INFO - middleware.py:112 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-14 23:26:19,536 - agent - DEBUG - middleware.py:117 - [log_before_model]ToolMessage | 扫地机器人清理不干净地面的原因包括主刷或边刷磨损、缠绕毛发，尘盒和滤网未及时清理，吸力不足，未开启精扫或沿边清扫模式，以及存在漏扫区域或死角。解决方法有：清理或更换主刷、边刷，清空尘盒并清洗或更换滤网，将吸力调至最高档，开启精扫或“沿边清扫”模式，增大清扫频次，检查是否设置禁区并重新建图或手动补扫，对床底、沙发底等区域在APP中设置“深度拖扫”。
